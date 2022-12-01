@@ -21,7 +21,7 @@ class CardContent extends StatelessWidget {
         ),
         Text(
           textTitle,
-          style: labelTextStyle,
+          style: kLabelTextStyle,
         ),
       ],
     );

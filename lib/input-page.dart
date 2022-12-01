@@ -36,8 +36,8 @@ class _InputPageState extends State<InputPage> {
                     },
                     child: ReusableCard(
                       colour: selectedGender == Gender.male
-                          ? activeCardColor
-                          : inActiveCardColor,
+                          ? kActiveCardColor
+                          : kInActiveCardColor,
                       cardChild: const CardContent(
                         iconName: FontAwesomeIcons.mars,
                         textTitle: 'MALE',
@@ -54,8 +54,8 @@ class _InputPageState extends State<InputPage> {
                     },
                     child: ReusableCard(
                       colour: selectedGender == Gender.female
-                          ? activeCardColor
-                          : inActiveCardColor,
+                          ? kActiveCardColor
+                          : kInActiveCardColor,
                       cardChild: const CardContent(
                         iconName: FontAwesomeIcons.venus,
                         textTitle: 'FEMALE',
@@ -68,7 +68,7 @@ class _InputPageState extends State<InputPage> {
           ),
           Expanded(
             child: ReusableCard(
-              colour: inActiveCardColor,
+              colour: kInActiveCardColor,
               cardChild: Container(),
             ),
           ),
@@ -77,13 +77,13 @@ class _InputPageState extends State<InputPage> {
               children: [
                 Expanded(
                   child: ReusableCard(
-                    colour: inActiveCardColor,
+                    colour: kInActiveCardColor,
                     cardChild: Container(),
                   ),
                 ),
                 Expanded(
                   child: ReusableCard(
-                    colour: inActiveCardColor,
+                    colour: kInActiveCardColor,
                     cardChild: Container(),
                   ),
                 ),
