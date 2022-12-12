@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'constants.dart';
+import '../constants/constants.dart';
 
 class CardContent extends StatelessWidget {
   const CardContent({Key? key, required this.iconName, required this.textTitle})
